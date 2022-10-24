@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul th:each="page:${pages}">
+        <li th:text="${page}"></li>
+    </ul>
+    <ul th:each="member:${content}">
+        <li th:text="${member.memberId}"></li>
+        <li th:text="${member.username}"></li>
+        <li th:text="${member.age}"></li>
+    </ul>
+</body>
+</html>
